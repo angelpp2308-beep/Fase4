@@ -1,10 +1,10 @@
 #Este seria el main
-"""
-Fase 4 - Componente práctico: Prácticas simuladas
-Curso: Programación (Código 213023)
-Universidad Nacional Abierta y a Distancia (UNAD)
-Sistema Integral de Gestión - Empresa Software FJ / Ruta Chipaque
-"""
+##
+#Fase 4 - Componente práctico: Prácticas simuladas
+#Curso: Programación (Código 213023)
+#Universidad Nacional Abierta y a Distancia (UNAD)
+#Sistema Integral de Gestión - Empresa Software FJ / Ruta Chipaque
+##
 
 import logging
 import sys
@@ -47,4 +47,3 @@ class ReservaInvalidaError(ErrorSistemaReservas):
     """Se valida y se lanza cuando hay datos incompletos, cantidades en cero o IDs malos."""
     def __init__(self, mensaje="Los datos proporcionados forzosamente para la reserva son inválidos."):
         super().__init__(mensaje)
-        
