@@ -48,6 +48,8 @@ class ReservaInvalidaError(ErrorSistemaReservas):
     def __init__(self, mensaje="Los datos proporcionados forzosamente para la reserva son inválidos."):
         super().__init__(mensaje)
 
+        
+
 # ==========================================
 # 3. CLASE QUE MODELA EL SERVICIO (Ruta / Recurso)
 # ==========================================
@@ -90,4 +92,3 @@ class RutaTransporte:
         # Si pasa todas las validaciones, efectúa la ocupación
         self.cupos_ocupados += cantidad
         logging.info(f"Reserva exitosa de {cantidad} cupo(s) en la ruta {self.codigo_ruta}.")
-        
